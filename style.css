@@ -352,7 +352,6 @@ body {
     border: none;
     color: var(--color-white);
     cursor: pointer;
-    z-index: 10;
 }
 
 .slider__dots {
