@@ -26,6 +26,7 @@ body {
     z-index: 100;
 }
 
+
 .header__logo {
     margin-top: 35px;
     margin-left: 120px;
@@ -209,6 +210,7 @@ body {
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0;
+    transition: 0.3s;
 }
 
 .hero__scroll {
@@ -223,7 +225,14 @@ body {
     gap: 6px;
     text-decoration: none;
     color: var(--color-white);
+    transition: 0.3s;
 }
+
+
+.hero__scroll:hover {
+    transform: translate(-50%, -5px);
+}
+
 
 .hero__scroll-text {
     font-family: "Open Sans", sans-serif;
@@ -232,6 +241,7 @@ body {
     line-height: 22px;
     letter-spacing: 0;
     text-transform: uppercase;
+
 }
 
 
@@ -341,7 +351,6 @@ body {
     background: none;
     border: none;
     color: var(--color-white);
-    font-size: 24px;
     cursor: pointer;
     z-index: 10;
 }
@@ -406,10 +415,6 @@ body {
     transform: scale(0.7);
     filter: brightness(0.6);
     transform-origin: right center;
-}
-
-.slider__arrow {
-    right: -50px;
 }
 
 
@@ -544,10 +549,6 @@ body {
     padding: 140px 120px;
 }
 
-.requirements__container {
-    max-width: 1200px;
-}
-
 .requirements__title {
     text-align: center;
     margin-bottom: 120px;
@@ -661,6 +662,11 @@ body {
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.quotes__btn:hover {
+    transform: scale(1.1);
 }
 
 .quotes__right {
@@ -852,7 +858,6 @@ body {
     cursor: pointer;
 }
 
-
 /* footer */
 
 .footer {
@@ -937,4 +942,51 @@ body {
 .footer__links {
     display: flex;
     gap: 10px;
+}
+
+
+@media (min-width: 1920px) {
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.about__right {
+    margin-left: 5%;
+}
+
+.features {
+    min-height: 820px;
+    padding: 160px 200px;
+    background-position: 35% center;
+}
+
+.slider__dots {
+    left: 22%;
+}
+
+.slider__arrow {
+    right: 15%;
+}
+
+.about {
+    padding-left: 15%;
+}
+
+.about__title {
+    padding-right: 20%;
+}
+
+.requirements__container,
+.quotes__container,
+.newsletter__container
+ {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 }

@@ -3,7 +3,7 @@
 const lang = document.querySelector('.header__lang');
 const btn = document.querySelector('.lang__btn');
 
-btn.addEventListener('click', function(e) {
+btn.addEventListener('click', function (e) {
 
     e.stopPropagation();
 
@@ -15,7 +15,7 @@ btn.addEventListener('click', function(e) {
 
 });
 
-document.addEventListener('click', function() {
+document.addEventListener('click', function () {
 
     lang.classList.remove('is-open');
 
@@ -58,7 +58,7 @@ updateSlider();
 
 const nextBtn = document.getElementById("sliderNext");
 
-nextBtn.addEventListener("click", function() {
+nextBtn.addEventListener("click", function () {
 
     current = current + 1;
 
@@ -67,5 +67,20 @@ nextBtn.addEventListener("click", function() {
     }
 
     updateSlider();
+
+});
+
+
+// логика hero__scroll
+
+const scrollBtn = document.getElementById("hero__scroll");
+
+scrollBtn.addEventListener("click", function (e) {
+
+    e.preventDefault();
+
+    document.getElementById("about").scrollIntoView({
+        behavior: "smooth"
+    });
 
 });
