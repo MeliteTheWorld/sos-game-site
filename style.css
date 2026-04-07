@@ -953,6 +953,10 @@ body {
     padding: 0 20px;
 }
 
+.requirements {
+    min-height: 830px;
+}
+
 
 .about__right {
     margin-left: 5%;
