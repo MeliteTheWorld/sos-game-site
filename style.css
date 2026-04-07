@@ -48,8 +48,12 @@ body {
     font-weight: 700;
     font-size: 12px;
     line-height: 1;
-    letter-spacing: 10%;
+    letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+.nav__link:hover {
+    color: var(--color-hover);
 }
 
 .header__logo-img {
@@ -95,7 +99,7 @@ body {
     font-weight: 700;
     font-size: 12px;
     line-height: 1;
-    letter-spacing: 10%;
+    letter-spacing: 2px;
     text-transform: uppercase;
     padding: 5px;
 }
@@ -112,7 +116,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 12px;
-    letter-spacing: 10%;
+    letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -874,14 +878,18 @@ body {
     margin: 0;
 }
 
-.footer__nav a {
+.footer__link {
     text-decoration: none;
     color: var(--color-white);
     font-family: "Open Sans";
     font-weight: 700;
     line-height: 100%;
     font-size: 12px;
-    letter-spacing: 10%;
+    letter-spacing: 2px;
+}
+
+.footer__link:hover {
+    color: var(--color-hover);
 }
 
 .footer__social {
@@ -891,6 +899,22 @@ body {
 
 .footer__social img {
     filter: brightness(0) invert(1);
+}
+
+.social-facebook:hover img {
+    filter: invert(29%) sepia(99%) saturate(2000%) hue-rotate(200deg);
+}
+
+.social-twitter:hover img {
+    filter: invert(55%) sepia(90%) saturate(2000%) hue-rotate(180deg);
+}
+
+.social-youtube:hover img {
+    filter: invert(15%) sepia(90%) saturate(7000%) hue-rotate(0deg);
+}
+
+.social-twitch:hover img {
+    filter: invert(38%) sepia(80%) saturate(2500%) hue-rotate(260deg);
 }
 
 .footer__bottom {
@@ -913,14 +937,4 @@ body {
 .footer__links {
     display: flex;
     gap: 10px;
-}
-
-.footer__links a {
-    text-decoration: none;
-    color: var(--color-white);
-    font-weight: 700;
-    font-family: "Open Sans";
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 10%;
 }
